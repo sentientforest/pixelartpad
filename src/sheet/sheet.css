@@ -1,0 +1,10 @@
+.gfx-sheet {
+  display: grid;
+  background-image:
+    linear-gradient(45deg, #808080 25%, transparent 25%),
+    linear-gradient(-45deg, #808080 25%, transparent 25%),
+    linear-gradient(45deg, transparent 25%, #808080 75%),
+    linear-gradient(-45deg, transparent 75%, #808080 75%);
+    background-size: 1vw 1vw;
+    background-position: 0 0, 0 .5vw, .5vw -.5vw, -.5vw 0;
+}

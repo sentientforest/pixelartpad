@@ -1,0 +1,16 @@
+.palette {
+  padding: 0.625rem;
+  background-color: #cecece;
+  display: grid;
+  grid-row-gap: 0.625rem;
+  grid-column-gap: 0.625rem;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto ;
+}
+
+.color {
+  /* width: 5rem; */
+  /* margin: 0.625rem; */
+  height: 100%;
+  width: 100%;
+}
