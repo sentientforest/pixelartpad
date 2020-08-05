@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 
-import 'bulma/css/bulma.css';
 import './index.css';
 
 import store from './state/store';
@@ -10,7 +9,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
  window.store = store
- 
+
 ReactDOM.render(
   <Provider store={store}>
     <App />
