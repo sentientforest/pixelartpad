@@ -1,13 +1,13 @@
 .color {
-  padding: 0.625rem 0.3125rem;
+  padding: 0.125rem;
 }
 
-.color.light {
-  background-color: #111;
+.well.light {
+  border: 0.0125px solid #ccc;
 }
 
-.color.dark {
-  background-color: #ddd;
+.well.dark {
+  border: none;
 }
 
 .color .btn {
