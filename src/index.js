@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 
+import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 
 import store from './state/store';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
- window.store = store
+window.store = store
 
 ReactDOM.render(
   <Provider store={store}>

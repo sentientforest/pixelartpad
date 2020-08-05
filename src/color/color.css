@@ -1,4 +1,29 @@
+.color {
+  padding: 0.625rem 0.3125rem;
+}
+
+.color.light {
+  background-color: #111;
+}
+
+.color.dark {
+  background-color: #ddd;
+}
+
+.color .btn {
+  z-index: 10;
+}
+
 .well {
+    display: inline-block;
+    vertical-align: middle;
     min-width: 40px;
     min-height: 40px;
+    margin-right: 2px;
+    border-radius: 50%;
+}
+
+.color .bi.bi-sliders {
+  display: inline-block;
+  vertical-align: middle;
 }

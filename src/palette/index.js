@@ -19,7 +19,7 @@ class Palette extends Component {
     let wells = []
     for (let i = 0; i < n; i++) {
       wells.push(
-        <Color edit={ edit } finalColor={ defaults[i] } key={ i }></Color>
+        <Color edit={ edit } selectedColor={ defaults[i] } key={ i }></Color>
       )
     }
     return (

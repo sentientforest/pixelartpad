@@ -33,22 +33,21 @@ class App extends Component {
   }
 
   render() {
-    let editPalette = this.editPalette 
+    let editPalette = this.editPalette
     return (
       <div className="App">
         <header className="App-header">
           <h1>pixelartpad</h1>
         </header>
-        <section class="section">
+        <section className="section">
           <div className="container">
-            <div className="media">
-              <div className="media-left">
+            <div className="row">
+              <div className="col-3">
                 <div className="palette-board">
-                  <button className="" onClick={editPalette}>Edit</button>
                   <Palette />
                 </div>
               </div>
-              <div className="media-content">
+              <div className="col-8">
                 <div className="drawing-board">
                   <Sheet width={16} height={16}></Sheet>
                 </div>
@@ -58,13 +57,13 @@ class App extends Component {
 
               </div>
             </div>
-            <div className="media">
-              <div className="media-left">
+            <div className="row">
+              <div className="col-3">
                 <div className="palette-board">
                   <Palette />
                 </div>
               </div>
-              <div className="media-content">
+              <div className="col-8">
                 <div className="drawing-board">
                   <Sheet width={64} height={64}></Sheet>
                 </div>
