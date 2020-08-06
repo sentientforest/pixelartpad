@@ -16,6 +16,9 @@ class App extends Component {
         two: false
       }
     }
+    this.newSheet = this.newSheet.bind(this)
+    this.uploadExisting = this.uploadExisting.bind(this)
+    this.downloadSheet = this.downloadSheet.bind(this)
   }
 
   acceptColor(arg1, arg2) {
@@ -30,6 +33,22 @@ class App extends Component {
     this.setState({
       palettes: palettes
     })
+  }
+
+  newSheet() {
+    // todo: implement pad to display current sheet
+    // implement action to add new sheet and display
+  }
+
+  uploadExisting() {
+    // todo: implement pixel to accept property identifying its sheet
+    // implement property in sheet to pass in colors for all pixels
+    // implement action to read or set those values for a given sheet
+  }
+
+  downloadSheet() {
+    // todo: call action to get current state of all pixels
+    // write to svg, png, etc. 
   }
 
   render() {
