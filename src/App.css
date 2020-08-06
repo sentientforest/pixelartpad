@@ -12,17 +12,30 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .drawing-board,
 .palette-board {
   display: inline-block;
-  margin: 2em;
+  margin: 1em 2em;
+}
+
+.drawing-board {
+  vertical-align: middle;
+}
+.save-load {
+  width: 4.2em;
+  vertical-align: top;
+  margin: 1em 0;
+}
+
+.save-load button {
+  height: 3em;
+  padding: 0;
+}
+.save-load svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.save-load button svg:first-child {
+  margin-right: 0.25em;
 }
