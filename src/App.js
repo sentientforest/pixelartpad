@@ -48,7 +48,7 @@ class App extends Component {
 
   downloadSheet() {
     // todo: call action to get current state of all pixels
-    // write to svg, png, etc. 
+    // write to svg, png, etc.
   }
 
   render() {
@@ -67,6 +67,8 @@ class App extends Component {
                 </div>
               </div>
               <div className="col-8">
+                <h4>16px square, scaled 100%</h4>
+
                 <div className="drawing-board">
                   <Sheet width={16} height={16}></Sheet>
                 </div>
@@ -112,8 +114,9 @@ class App extends Component {
                 </div>
               </div>
               <div className="col-8">
+                <h4>64px square, scaled 25%</h4>
                 <div className="drawing-board">
-                  <Sheet width={64} height={64}></Sheet>
+                  <Sheet width={64} height={64} scale={0.25}></Sheet>
                 </div>
               </div>
             </div>
