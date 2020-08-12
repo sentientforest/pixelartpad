@@ -8,6 +8,7 @@ class Sheet extends Component {
     super(props)
     this.calcGridColumns = this.calcGridColumns.bind(this)
     this.state = {
+      scale: props.scale,
       width: props.width,
       height: props.height
     }
@@ -27,12 +28,13 @@ class Sheet extends Component {
 
   render() {
     let page = this.state.page
-    let width = this.state.width
-    let sheetWidth = `${width}vw`
-    let height = this.state.height
-    let sheetHeight = `${height}vw`
+    const width = this.state.width
+    const scale = this.state.scale
+    const sheetWidth = `${width * scale}vw`
+    const height = this.state.height
+    const sheetHeight = `${height * scale}vw`
     let pixels = []
-    let gridTemplateColumns = this.calcGridColumns()
+    const gridTemplateColumns = this.calcGridColumns()
     for (let i = 1; i <= width * height; i++) {
       pixels.push(
         <Pixel key={i} page={page} className={'pixel-' + i}></Pixel>
@@ -57,6 +59,7 @@ class Sheet extends Component {
 
 Sheet.defaultProps = {
   page: 1,
+  scale: 1,
   width: 16,
   height: 16
 }
