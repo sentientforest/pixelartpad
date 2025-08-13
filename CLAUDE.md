@@ -15,11 +15,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Architecture
 
 ### Core Technology Stack
-- **React 16.13** with class components (not using hooks)
-- **Redux** for global state management
-- **React-Redux** for connecting components to store
-- **Bootstrap 4.5** for styling framework
-- **Create React App** as the build toolchain (not ejected)
+- **React 18.3** with class components (not using hooks, uses createRoot API)
+- **Redux 5.0** for global state management (using legacy_createStore)
+- **React-Redux 9.1** for connecting components to store
+- **Bootstrap 5.3** for styling framework
+- **Create React App 5.0** as the build toolchain (not ejected)
 
 ### Application Structure
 
