@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import { ChromePicker, PhotoshopPicker } from 'react-color'
 import Palette from './palette'
 import Sheet from './sheet'
-import Color from './color'
 import './App.css'
 
 class App extends Component {
@@ -52,7 +50,6 @@ class App extends Component {
   }
 
   render() {
-    let editPalette = this.editPalette
     return (
       <div className="App">
         <header className="App-header">

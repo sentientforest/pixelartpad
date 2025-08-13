@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { ChromePicker, PhotoshopPicker } from 'react-color'
+import { ChromePicker } from 'react-color'
 import * as ColorLib from 'color'
 import { penColor } from '../state/actions'
 import './color.css'

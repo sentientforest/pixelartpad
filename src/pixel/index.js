@@ -9,9 +9,6 @@ const mapStateToProps = state => {
   return { pen: state.pen }
 }
 
-const mapDispatchToProps = dispatch => {
-
-}
 
 class Pixel extends Component {
   constructor(props) {
